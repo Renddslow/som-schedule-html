@@ -13,6 +13,7 @@
                 <p>
                     Running a school of ministry is hard work. Balancing the rigors of running a church and educating the next generation of ministers, it can be hard to find time for both. Below is a recommended time table for students which balances a robust prayer life, academics, and ministry work.
                 </p>
+                <p>The schedule is based around the <a href="https://en.wikipedia.org/wiki/Rule_of_Saint_Benedict">Rule of St. Benedict</a>, a monk from the 10th century who wanted to create an environment for people to grow closer to God while being engaged regularly in the work of prayer.</p>
             </header>
             <div class="schedule">
                 <% for (day of days) { %>
@@ -27,6 +28,7 @@
                                 </div>
                                 <div class="block__meta">
                                     <h2><%= block.title %></h2>
+                                    <p><%= block.participants %></p>
                                 </div>
                             </a>
                         <% } %>

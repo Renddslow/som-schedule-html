@@ -5,6 +5,7 @@
     --black: #272b46;
     --gray: #76788a;
     --purple: #5a51b4;
+    --red: #ed6d69;
 }
 
 * {
@@ -26,7 +27,9 @@ body {
 .app > header {
     color: #fff;
     box-sizing: border-box;
-    padding: 24px;
+    padding: 24px 8px;
+    max-width: 768px;
+    margin: 0 auto;
 }
 
 .app > header h1 {
@@ -104,12 +107,17 @@ body {
     font-size: 18px;
 }
 
+.block__meta p {
+    font-size: 14px;
+    color: var(--gray);
+}
+
 .day header {
     font-weight: 800;
     margin-bottom: 12px;
 }
 
-header p {
+.app > header p {
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -117,7 +125,12 @@ header p {
     margin-top: 24px;
 }
 
-@media screen and (max-width: 400px) {
+.app > header p a {
+    color: var(--red);
+    font-weight: 600;
+}
+
+@media screen and (max-width: 414px) {
     .schedule {
         grid-template-columns: 1fr;
     }
