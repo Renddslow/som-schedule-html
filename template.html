@@ -39,15 +39,17 @@
                 <header><%= day.name %></header>
                 <div class="blocks">
                     <% for (block of day.blocks) { %>
-                        <div class="block <%= block.className %>">
+                        <a class="block <%= block.className %>" href="#/events/<%= block.permalink %>">
                             <div class="block__meta">
                                 <h2><%= block.title %></h2>
+                                <span><%= block.time %></span>
                             </div>
-                        </div>
+                        </a>
                     <% } %>
                 </div>
             </div>
             <% } %>
         </div>
+        <script src="/main.js"></script>
     </body>
 </html>
