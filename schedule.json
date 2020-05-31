@@ -97,7 +97,77 @@
     },
     {
       "name": "Sundays",
-      "blocks": []
+      "blocks": [
+        {
+          "title": "Arrive on Campus",
+          "start": "7:00",
+          "end": "7:15",
+          "permalink": "arrive-on-campus",
+          "participants": "Students"
+        },
+        {
+          "title": "Morning Prayer",
+          "start": "7:15",
+          "end": "7:45",
+          "permalink": "morning-prayer",
+          "participants": "Students + Director"
+        },
+        {
+          "title": "Ministry Tasks",
+          "start": "7:45",
+          "end": "9:00",
+          "permalink": "ministry-tasks-sunday",
+          "participants": "All Staffs"
+        },
+        {
+          "title": "Prayer for Services",
+          "start": "9:00",
+          "end": "9:15",
+          "permalink": "prayer-for-services",
+          "participants": "All Staff"
+        },
+        {
+          "title": "Services",
+          "start": "9:00",
+          "end": "12:00",
+          "permalink": "services",
+          "participants": "All Staff"
+        },
+        {
+          "title": "Lunch",
+          "start": "1:00",
+          "end": "2:00",
+          "permalink": "lunch",
+          "participants": "Students"
+        },
+        {
+          "title": "Evening Prayer",
+          "start": "5:00",
+          "end": "5:30",
+          "permalink": "evening-prayer",
+          "participants": "Students"
+        },
+        {
+          "title": "Dinner",
+          "start": "5:30",
+          "end": "7:00",
+          "permalink": "dinner",
+          "participants": "Students"
+        },
+        {
+          "title": "Compline",
+          "start": "8:45",
+          "end": "9:00",
+          "permalink": "compline",
+          "participants": "Students"
+        },
+        {
+          "title": "Lights-Out/Great Silence",
+          "start": "10:00",
+          "permalink": "great-silence",
+          "participants": "Students"
+        }
+      ]
     }
   ],
   "descriptions": {

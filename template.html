@@ -5,6 +5,19 @@
         <title>School of Ministry Schedule Guide</title>
         <link rel="stylesheet" href="/style.css">
         <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <title>School of Ministry Schedule Guide</title>
+        <meta name="title" content="School of Ministry Schedule Guide">
+        <meta name="description" content="A pre-built schedule for Schools of Ministry to form students in prayer, Scripture reading, the Christian tradition, and the work of ministry.">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://schoolsofministry.com/">
+        <meta property="og:title" content="School of Ministry Schedule Guide">
+        <meta property="og:description" content="A pre-built schedule for Schools of Ministry to form students in prayer, Scripture reading, the Christian tradition, and the work of ministry.">
+        <meta property="og:image" content="https://i.imgur.com/fwp6G7p.png">
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://schoolsofministry.com/">
+        <meta property="twitter:title" content="School of Ministry Schedule Guide">
+        <meta property="twitter:description" content="A pre-built schedule for Schools of Ministry to form students in prayer, Scripture reading, the Christian tradition, and the work of ministry.">
+        <meta property="twitter:image" content="https://i.imgur.com/fwp6G7p.png">
     </head>
     <body>
         <div class="app">
@@ -13,28 +26,30 @@
                 <p>
                     Running a school of ministry is hard work. Balancing the rigors of running a church and educating the next generation of ministers, it can be hard to find time for both. Below is a recommended time table for students which balances a robust prayer life, academics, and ministry work.
                 </p>
-                <p>The schedule is based around the <a href="https://en.wikipedia.org/wiki/Rule_of_Saint_Benedict">Rule of St. Benedict</a>, a monk from the 10th century who wanted to create an environment for people to grow closer to God while being engaged regularly in the work of prayer.</p>
+                <p>The schedule is based around abbreviated prayer times of the <a href="https://en.wikipedia.org/wiki/Rule_of_Saint_Benedict">Rule of St. Benedict</a>, a monk from the yth century who wanted to create an environment for people to grow closer to God and be engaged regularly in the work of prayer.</p>
             </header>
             <div class="schedule">
-                <% for (day of days) { %>
-                <div class="day">
-                    <header><%= day.name %></header>
-                    <div class="blocks">
-                        <% for (block of day.blocks) { %>
-                            <a class="block <%= block.className %>" href="#/events/<%= block.permalink %>">
-                                <div class="block__time">
-                                    <span><%= block.start %></span>
-                                    <span><%= block.end %></span>
-                                </div>
-                                <div class="block__meta">
-                                    <h2><%= block.title %></h2>
-                                    <p><%= block.participants %></p>
-                                </div>
-                            </a>
-                        <% } %>
+                <div class="days">
+                    <% for (day of days) { %>
+                    <div class="day">
+                        <header><%= day.name %></header>
+                        <div class="blocks">
+                            <% for (block of day.blocks) { %>
+                                <a class="block <%= block.className %>" href="#/events/<%= block.permalink %>">
+                                    <div class="block__time">
+                                        <span><%= block.start %></span>
+                                        <span><%= block.end %></span>
+                                    </div>
+                                    <div class="block__meta">
+                                        <h2><%= block.title %></h2>
+                                        <p><%= block.participants %></p>
+                                    </div>
+                                </a>
+                            <% } %>
+                        </div>
                     </div>
+                    <% } %>
                 </div>
-                <% } %>
             </div>
             <script src="/main.js"></script>
             <% for (description of descriptions) { %>
