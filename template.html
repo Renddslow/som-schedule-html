@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>School of Ministry Schedule Guide</title>
+    </head>
+    <body>
+        <p>
+
+        </p>
+        <div class="schedule">
+            <aside>
+                <ol>
+                    <li>7:00am</li>
+                    <li>7:30am</li>
+                    <li>8:00am</li>
+                    <li>8:30am</li>
+                    <li>9:00am</li>
+                    <li>9:30am</li>
+                    <li>10:00am</li>
+                    <li>10:30am</li>
+                    <li>11:00am</li>
+                    <li>11:30am</li>
+                    <li>12:00am</li>
+                    <li>12:30am</li>
+                    <li>1:00pm</li>
+                    <li>1:30pm</li>
+                    <li>2:00pm</li>
+                    <li>2:30pm</li>
+                    <li>3:00pm</li>
+                    <li>3:30pm</li>
+                    <li>4:00pm</li>
+                    <li>4:30pm</li>
+                    <li>5:00pm</li>
+                    <li>5:30pm</li>
+                </ol>
+            </aside>
+            <% for (day of days) { %>
+            <div class="day">
+                <header><%= day.name %></header>
+                <div class="blocks">
+                    <% for (block of day.blocks) { %>
+                        <div class="block <%= block.className %>">
+                            <div class="block__meta">
+                                <h2><%= block.title %></h2>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+            <% } %>
+        </div>
+    </body>
+</html>
