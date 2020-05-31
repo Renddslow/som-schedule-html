@@ -1,6 +1,107 @@
-[
-  {
-    "name": "Sunday",
-    "blocks": []
+{
+  "days": [
+    {
+      "name": "Weekdays",
+      "blocks": [
+        {
+          "title": "Arrive on Campus",
+          "permalink": "arrival",
+          "start": "7:45",
+          "end": "8:00",
+          "participants": "Students"
+        },
+        {
+          "title": "Morning Prayer",
+          "permalink": "morning-prayer",
+          "start": "8:00",
+          "end": "8:30",
+          "participants": "All-Staff"
+        },
+        {
+          "title": "Check-In",
+          "participants": "Student + Director",
+          "start": "8:30",
+          "end": "9:00",
+          "permalink": "check-in"
+        },
+        {
+          "title": "Morning Classes",
+          "participants": "Students + Instructor(s)",
+          "start": "9:00",
+          "end": "11:30",
+          "permalink": "morning-classes"
+        },
+        {
+          "title": "Midday Prayer",
+          "participants": "Students + Director",
+          "start": "11:30",
+          "end": "12:00",
+          "permalink": "midday-prayer"
+        },
+        {
+          "title": "Lunch",
+          "participants": "Students",
+          "start": "12:00",
+          "end": "12:30",
+          "permalink": "lunch"
+        },
+        {
+          "title": "Reading/Study",
+          "participants": "Students",
+          "start": "12:30",
+          "end": "2:00",
+          "permalink": "reading"
+        },
+        {
+          "title": "Afternoon Classes/Ministry Tasks",
+          "start": "2:00",
+          "end": "3:00",
+          "permalink": "afternoon-classes",
+          "participants": "Students + Instructor(s)/Director"
+        },
+        {
+          "title": "Ministry Tasks",
+          "start": "3:00",
+          "end": "5:00",
+          "participants": "Students + Director",
+          "permalink": "ministry-tasks"
+        },
+        {
+          "title": "Evening Prayer",
+          "start": "5:00",
+          "end": "5:30",
+          "permalink": "evening-prayer",
+          "participants": "Students"
+        },
+        {
+          "title": "Dinner",
+          "start": "5:30",
+          "end": "7:00",
+          "permalink": "dinner",
+          "participants": "Students"
+        },
+        {
+          "title": "Compline",
+          "start": "8:45",
+          "end": "9:00",
+          "permalink": "compline",
+          "participants": "Students"
+        },
+        {
+          "title": "Lights-Out/Great Silence",
+          "start": "10:00",
+          "permalink": "great-silence",
+          "participants": "Students"
+        }
+      ]
+    },
+    {
+      "name": "Sundays",
+      "blocks": []
+    }
+  ],
+  "descriptions": {
+    "arrival": "",
+    "morning-prayer": ""
   }
-]
+}

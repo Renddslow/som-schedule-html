@@ -11,6 +11,12 @@ const write = promisify(fs.writeFile);
   const schedule = JSON.parse(((await read(path.join(__dirname, 'schedule.json')))).toString());
   const template = (await read(path.join(__dirname, 'template.html'))).toString();
 
-  const html = ejs.render(template, { days: schedule });
+  const html = ejs.render(template, {
+    days: schedule.days,
+    descriptions: Object.keys(schedule.descriptions).map((k) => ({
+      permalink: k,
+      description: schedule.descriptions[k],
+    })),
+  });
   await write(path.join(__dirname, 'index.html'), html);
 })();

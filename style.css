@@ -1,0 +1,129 @@
+:root {
+    --mg: #f2f2f8;
+    --bg: #fff;
+    --yellow: #f7c85b;
+    --black: #272b46;
+    --gray: #76788a;
+    --purple: #5a51b4;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: var(--purple);
+}
+
+.app {
+    grid-template-rows: minmax(0, max-content) 1fr;
+    display: grid;
+    min-height: 100vh;
+}
+
+.app > header {
+    color: #fff;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.app > header h1 {
+    font-weight: 800;
+}
+
+.schedule {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, max-content));
+    background: var(--mg);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    box-sizing: border-box;
+    height: 100%;
+    justify-content: center;
+    grid-gap: 8px;
+}
+
+.day {
+    min-width: 348px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 8px 32px;
+}
+
+.blocks {
+    display: grid;
+    grid-gap: 8px;
+}
+
+.block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 85px) 1fr;
+    align-items: center;
+    background: var(--bg);
+    border-radius: 16px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.block__meta,
+.block__time {
+    padding: 16px;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.block__time {
+    display: block;
+}
+
+.block__time span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.block__time span:first-child {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.block__time span:last-child {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.block__meta {
+    border-left: 2px solid var(--yellow);
+}
+
+.block__meta h2 {
+    font-size: 18px;
+}
+
+.day header {
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 14px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-top: 24px;
+}
+
+@media screen and (max-width: 400px) {
+    .schedule {
+        grid-template-columns: 1fr;
+    }
+
+    .day {
+        width: 100%;
+        min-width: 0;
+    }
+}
