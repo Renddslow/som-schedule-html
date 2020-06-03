@@ -22,7 +22,8 @@
     <body>
         <div class="app">
             <header>
-                <h1>School of Ministry Schedule</h1>
+                <h1>Schools of Ministry</h1>
+                <h2>Schedule Guide</h2>
                 <p>
                     Running a school of ministry is hard work. Balancing the rigors of running a church and educating the next generation of ministers, it can be hard to find time for both. Below is a recommended time table for students which balances a robust prayer life, academics, and ministry work.
                 </p>
@@ -51,14 +52,25 @@
                     <% } %>
                 </div>
             </div>
-            <script src="/main.js"></script>
+            <div id="modal-container"></div>
+            <footer>
+                &copy; <%= new Date().getFullYear() %> Schools of Ministry
+            </footer>
             <% for (description of descriptions) { %>
-                <script type="text/template" id="<%= description.permalink %>">
+                <script type="template/html" id="<%= description.permalink %>">
                     <div class="modal">
-                        <%- description.description %>
+                        <div class="modal__content">
+                            <div class="modal__content__header">
+                                <a class="close" href="#/"></a>
+                            </div>
+                            <div class="modal__content__body">
+                                <%- description.description %>
+                            </div>
+                        </div>
                     </div>
                 </script>
             <% } %>
+            <script src="/main.js"></script>
         </div>
     </body>
 </html>
