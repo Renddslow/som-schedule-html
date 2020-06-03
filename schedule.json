@@ -102,7 +102,7 @@
           "title": "Arrive on Campus",
           "start": "7:00",
           "end": "7:15",
-          "permalink": "arrive-on-campus",
+          "permalink": "arrival",
           "participants": "Students"
         },
         {
@@ -169,9 +169,5 @@
         }
       ]
     }
-  ],
-  "descriptions": {
-    "arrival": "",
-    "morning-prayer": "## Morning Prayer\n"
-  }
+  ]
 }

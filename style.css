@@ -171,6 +171,10 @@ body.modal-open .app .schedule {
   border-radius: 16px;
   box-sizing: border-box;
   padding: 24px;
+  height: calc(100vh - 48px);
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr;
 }
 
 .modal__content__header {
@@ -202,7 +206,13 @@ body.modal-open .app .schedule {
 
 .modal__content__header a.close::after {
   transform: rotate(-45deg);
-  /*top: 1px;*/
+}
+
+.modal__content__body {
+  height: 100%;
+  overflow-y: auto;
+  position: relative;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 414px) {
