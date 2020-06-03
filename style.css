@@ -175,19 +175,20 @@ body.modal-open .app .schedule {
   position: relative;
   display: grid;
   grid-template-rows: max-content 1fr;
+  grid-gap: 8px;
 }
 
 .modal__content__header {
+  grid-template-columns: 1fr max-content;
   width: 100%;
-  display: block;
-  margin-bottom: 12px;
+  display: grid;
+  align-items: center;
 }
 
 .modal__content__header a.close {
   width: 24px;
   height: 24px;
   position: relative;
-  margin-left: auto;
   display: block;
 }
 
