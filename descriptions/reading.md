@@ -1,3 +1,3 @@
 ---
-title: Reading
+title: Reading/Study
 ---
